@@ -18,106 +18,84 @@
     <div class="row">
       <div class="large-12 columns">
         <div class="callout">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>
-          </div>
+          <h3>Basic Foundation Stuff</h3>
+	  <p>This nicely bordered thing is called a <strong>callout</strong>.  A callout not only looks nice, but it has borders, and margins, and other fun stuff.</p>
+	  <p>Obviously, h1s and the like work and look better than standard html</p>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
+        <h5>Here&rsquo;s your basic grid organizational thing:</h5>
         <!-- Grid Example -->
-
+	<p>Please note how these responsively resize as you change the window size.</p>
         <div class="row">
           <div class="large-12 columns">
             <div class="primary callout">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
+              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a <strong>callout</strong> element so you can see where the columns are - it's not required at all for the grid.</p>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="large-6 medium-6 columns">
             <div class="primary callout">
-              <p>Six columns</p>
+              <p>Six columns (large-6, medium-6)</p>
+	      <p>This means that on a large screen, this is half the total size (12 is the total), and the same on medium screens.  On a small screen, this will become another row.</p>
             </div>
           </div>
           <div class="large-6 medium-6 columns">
             <div class="primary callout">
-              <p>Six columns</p>
+              <p>These callouts also have the <strong>primary</strong> class which have the nice blue background.</p>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="large-4 medium-4 small-4 columns">
             <div class="primary callout">
-              <p>Four columns</p>
+              <p>Four columns (large-4, medium-4, small-4)</p>
             </div>
           </div>
           <div class="large-4 medium-4 small-4 columns">
             <div class="primary callout">
-              <p>Four columns</p>
+              <p>All of the columns have the column class!</p>
             </div>
           </div>
           <div class="large-4 medium-4 small-4 columns">
             <div class="primary callout">
-              <p>Four columns</p>
+              <p>There is nothing really else of import to say about this grid stuff</p>
             </div>
           </div>
         </div>
 
         <hr />
 
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+        <h5>Forms:</h5>
         <form>
           <div class="row">
             <div class="large-12 columns">
               <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
+              <input type="text" placeholder="You can set a placeholder by using placeholder= in html" />
             </div>
           </div>
           <div class="row">
-            <div class="large-4 medium-4 columns">
+            <div class="large-2 medium-2 columns">
               <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
+              <input type="text" placeholder="input css" />
             </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
+            <div class="large-10 medium-10 columns">
               <div class="row collapse">
-                <label>Input Label</label>
+                <label>This is an Input Label</label>
                 <div class="input-group">
-                  <input type="text" placeholder="small-9.columns" class="input-group-field" />
-                  <span class="input-group-label">.com</span>
+                  <input type="text" placeholder="This has input-group-field" class="input-group-field" />
+                  <span class="input-group-label">This is in a span with the <strong>input-group-label</strong> class</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="large-12 columns">
-              <label>Select Box</label>
+              <label>Select Box (these are not our puns)</label>
               <select>
                 <option value="husker">Husker</option>
                 <option value="starbuck">Starbuck</option>
@@ -126,38 +104,37 @@
               </select>
             </div>
           </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
         </form>
       </div>
 
       <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="button">Simple Button</a><br/>
-        <a href="#" class="success button">Success Btn</a><br/>
-        <a href="#" class="alert button">Alert Btn</a><br/>
-        <a href="#" class="secondary button">Secondary Btn</a></p>
-        <div class="callout">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
+        <h5>Here are some fun buttons (all in an 'a' html tag):</h5>
+        <p><a href="#" class="button">class <strong>button</strong></a><br/>
+        <a href="#" class="success button">class <strong>success button</strong></a><br/>
+        <a href="#" class="alert button">class <strong>alert button</strong></a><br/>
+        <a href="#" class="secondary button">class <strong>secondary button</strong></a></p>
+        <div class="callout success">
+          <h5>A success callout</h5>
+          <p>This entire sidebars is created using the columns!</p>
+	  <p>Callouts can use the same classes as buttons</p>
+	  <p>Please ensure to include the necessary css files for foundation and the js files for more fun foundation stuff</p>
+          <a href="http://xkcd.com" class="small button">class <strong>small button</strong></a>
         </div>
+	<div class="callout alert">
+	  <table class="table">
+	    <tr>
+	      <td>A table</td>
+	      <td>More table</td>
+	    </tr>
+	    <tr>
+	      <td>The table class</td>
+	      <td>Is 'table'</td>
+	    </tr>
+	    <tr>
+	      <td>This is an</td>
+	      <td>alert callout</td>
+	  </table>
+	</div>
       </div>
     </div>
 
